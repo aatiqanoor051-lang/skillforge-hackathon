@@ -1,0 +1,13 @@
+aws_region            = "us-east-1"
+project_name          = "skillforge"
+db_master_username    = "skillforge_admin"
+docdb_instance_class  = "db.t3.medium"
+docdb_instance_count  = 1
+backend_cpu           = 512
+backend_memory        = 1024
+
+# Sensitive values — do NOT put real secrets in a committed tfvars file.
+# Prefer environment variables: TF_VAR_db_master_password, TF_VAR_jwt_secret, TF_VAR_ai_api_key
+# db_master_password = "set-via-env-var-instead"
+# jwt_secret          = "set-via-env-var-instead"
+# ai_api_key          = "set-via-env-var-instead"

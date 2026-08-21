@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background-color: #213C51;
+  color: #EEEEEE;
+}
+
+/* Visible focus states for keyboard navigation, on top of Tailwind's utilities */
+:focus-visible {
+  outline: 2px solid #DDAED3;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::selection {
+  background-color: #DDAED3;
+  color: #213C51;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #6594B1;
+  border-radius: 9999px;
+}
